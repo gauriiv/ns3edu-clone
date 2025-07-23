@@ -106,18 +106,18 @@ const CourseCatalog = () => {
   return (
     <section id="courses" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Explore Our Courses
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-pink-600 max-w-3xl mx-auto">
             Choose from our comprehensive collection of NS3 network simulation courses 
             designed for all skill levels.
           </p>
         </div>
 
-        {/* Category Filter */}
+        
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category) => (
             <button
@@ -134,14 +134,14 @@ const CourseCatalog = () => {
           ))}
         </div>
 
-        {/* Courses Grid */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredCourses.map((course) => (
             <div 
               key={course.id}
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
             >
-              {/* Course Image */}
+              
               <div className="relative h-48 bg-gradient-to-br from-blue-400 to-indigo-600">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <svg className="w-16 h-16 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -153,7 +153,7 @@ const CourseCatalog = () => {
                 </div>
               </div>
 
-              {/* Course Content */}
+              
               <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
                   <span className={`px-2 py-1 rounded-full text-xs font-semibold ${
@@ -189,7 +189,7 @@ const CourseCatalog = () => {
                   <span className="text-sm text-gray-500">
                     By {course.instructor}
                   </span>
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors duration-300">
+                  <button className="bg-blue-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors duration-300">
                     Enroll Now
                   </button>
                 </div>
@@ -198,9 +198,9 @@ const CourseCatalog = () => {
           ))}
         </div>
 
-        {/* Load More Button */}
+        
         <div className="text-center mt-12">
-          <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
+          <button className="border-2 border-pink-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
             View All Courses
           </button>
         </div>

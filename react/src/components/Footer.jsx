@@ -3,7 +3,8 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+          
+          
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold text-blue-400 mb-4">NS3Edu</h3>
             <p className="text-gray-300 mb-4">

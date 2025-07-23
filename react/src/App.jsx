@@ -13,6 +13,7 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isSignInOpen, setIsSignInOpen] = useState(false)
 
+  
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} onSignInClick={() => setIsSignInOpen(true)} />
